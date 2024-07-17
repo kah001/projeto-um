@@ -1,0 +1,18 @@
+.elementos {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+    input {
+        min-width: 10px;
+        outline: none;
+    }
+
+    .resposta{
+        height: 25px;
+        border: 0.5px #000 solid;
+        width: 200px;
+        padding: 2px;
+        padding-left: 5px;
+    }
+}

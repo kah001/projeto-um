@@ -19,6 +19,12 @@ export default function App() {
             <li>
               <Link to='/eventos'>Ir para eventos</Link>
             </li>
+            <li>
+              <Link to='/variavelEstado'>Ir para Variável de Estado</Link>
+            </li>
+            <li>
+              <Link to='/calculadora'>Ir para a Calculadora</Link>
+            </li>
           </ul>
           <br />
           <input type="text" className='' placeholder='Digite aqui' />

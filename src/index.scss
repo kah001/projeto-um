@@ -30,15 +30,20 @@
       box-shadow: #000 0px 0px 8px 0px;
       max-width: 800px;
 
-
       h2 {
         color: #585858;
       }
 
-      input {
+      input [type='text'] {
         width: 100%;
         height: 30px;
         outline: none;
+      }
+
+      input [type='checkbox'], input [type='radio'] {
+        min-width: auto;
+        align-items: center;
+        display: flex;
       }
 
       select {

@@ -28,7 +28,7 @@ export default function Eventos() {
 
             <section className='geral'>
                 <section className='seçao'>
-                    <h1>Entendendo eventos</h1>
+                    <h2>Entendendo Eventos</h2>
                     <br />
                     <p onClick={clicar} onMouseMove={movimentarMouse}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui impedit quia expedita. Error, tempora officiis quis dolorem commodi repudiandae architecto aliquam consequatur, asperiores quidem, tempore reiciendis ducimus dicta sunt corrupti?</p>
                     <br />
