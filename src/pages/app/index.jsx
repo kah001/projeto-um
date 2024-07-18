@@ -25,6 +25,9 @@ export default function App() {
             <li>
               <Link to='/calculadora'>Ir para a Calculadora</Link>
             </li>
+            <li>
+              <Link to='/exemplos'>Ir para Exemplos</Link>
+            </li>
           </ul>
           <br />
           <input type="text" className='' placeholder='Digite aqui' />
