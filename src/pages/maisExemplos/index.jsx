@@ -15,6 +15,7 @@ export default function Exemplos() {
 
     const [novaMeta, setNovaMeta] = useState()
     const [listaMetas, setListaMetas] = useState([])
+    const [editando, setEditando] = useState(-1)
     
 
     function quantidade (n) {
@@ -63,8 +64,27 @@ export default function Exemplos() {
         //listaMetas.push(novaMeta) - Método convencional JS
 
         if (novaMeta != '') {
-            setListaMetas([...listaMetas, novaMeta])
+
+            if (editando == -1) {
+                setListaMetas([...listaMetas, novaMeta])
+                setNovaMeta('')
+            } else {
+                listaMetas[editando] = novaMeta
+                setListaMetas([...listaMetas])
+                setNovaMeta('')
+                setEditando(-1)
+            }
         }
+    } function enter(a) {
+        if (a.key == 'Enter') {
+            adicionandoMeta()
+        }
+    } function removerMeta(posiçao) {
+        listaMetas.splice(posiçao, 1)
+        setListaMetas([...listaMetas])
+    } function alterarMeta(posiçao) {
+        setNovaMeta(listaMetas[posiçao])
+        setEditando(posiçao)
     }
 
 
@@ -129,16 +149,18 @@ export default function Exemplos() {
                     <br />
 
                     <div className='elementos'>
-                        <input type="text" placeholder='Digite sua meta aqui' value={novaMeta} onChange={escrevendoMeta} />
+                        <input type="text" placeholder='Digite sua meta aqui' onKeyUp={enter} value={novaMeta} onChange={escrevendoMeta} />
                         <button onClick={adicionandoMeta}>Adicionar</button>
                         <br />
                     </div>
 
-                <ul>
-                    {listaMetas.map(item =>
-                        <li>{item}</li>
-                    )}
-                </ul>
+                    <ul>
+                        {listaMetas.map((item, posiçao) =>
+                        <li key={posiçao}>
+                            <><i className='fa fa-trash' onClick={() => removerMeta(posiçao)}></i> <i className='fa fa-pen-to-square' onClick={() => alterarMeta(posiçao)}></i> <p>{item}</p></>
+                        </li> 
+                        )}
+                    </ul>
 
                 </section>
             </section>

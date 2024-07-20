@@ -60,6 +60,12 @@
         outline: none;
         border: 1px #000 solid;
       }
+
+      li {
+        display: flex;
+        margin-bottom: 5px;
+        gap: 5px;
+      }
     }
   }
 }
