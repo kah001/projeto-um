@@ -164,6 +164,20 @@ export default function Exemplos() {
 
                 </section>
             </section>
+
+            <section className='geral'>
+                <section className='seçao'>
+                    <h2>Meus planos atuais</h2>
+                    <br />
+
+                    <div className='elementos'>
+                        <input type="text" placeholder='Meus planos atuais aqui' />
+                        <input type="text" placeholder='Situação do plano aqui' />
+                        <input type="text" placeholder='Cor de identificação' />
+                        <button>Adicionar</button>
+                    </div>
+                </section>
+            </section>
         </div>
     )
 }
