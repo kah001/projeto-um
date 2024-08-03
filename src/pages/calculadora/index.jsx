@@ -1,5 +1,6 @@
 import './index.scss'
 import { useState } from 'react'
+import Cabecalho from '../../components/cabecalho'
 
 
 export default function Calculadora() {
@@ -90,9 +91,7 @@ export default function Calculadora() {
         
         <div className='pagina-calculadora pagina'>
 
-            <header className='cabeçalho'>
-                <h1>ReactJS | Calculadora</h1>
-            </header>
+            <h1><Cabecalho titulo='ReactJS | Calculadora'/></h1>
 
 
             <section className='geral'>

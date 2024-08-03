@@ -1,5 +1,6 @@
 import './index.scss'
 import { useState } from 'react'
+import Cabecalho from '../../components/cabecalho'
 
 export default function Exemplos() {
 
@@ -16,6 +17,11 @@ export default function Exemplos() {
     const [novaMeta, setNovaMeta] = useState()
     const [listaMetas, setListaMetas] = useState([])
     const [editando, setEditando] = useState(-1)
+
+    const [plano, setPlano] = useState('')
+    const [situacao, setSituacao] = useState('')
+    const [cor, setCor] = useState('')
+    const [lista, setLista] = useState([])
     
 
     function quantidade (n) {
@@ -85,14 +91,26 @@ export default function Exemplos() {
     } function alterarMeta(posiçao) {
         setNovaMeta(listaMetas[posiçao])
         setEditando(posiçao)
+    } 
+    
+    function adicionarPlano () {
+        let novoPlano = {
+            titulo: plano,
+            tempo: situacao, 
+            tema: cor
+        }
+
+        setLista([...lista, novoPlano])
+
+        setPlano('')
+        setSituacao('')
+        setCor('')
     }
 
 
     return (
         <div className='pagina-exemplos pagina'>
-            <header className='cabeçalho'>
-                <h1>ReactJS | Mais exemplos com Variável de Estado</h1>
-            </header>
+            <h1><Cabecalho titulo='ReactJS | Mais exemplos com Variável de Estado'/></h1>
 
             <section className='geral'>
                 <section className='seçao'>
@@ -171,11 +189,24 @@ export default function Exemplos() {
                     <br />
 
                     <div className='elementos'>
-                        <input type="text" placeholder='Meus planos atuais aqui' />
-                        <input type="text" placeholder='Situação do plano aqui' />
-                        <input type="text" placeholder='Cor de identificação' />
-                        <button>Adicionar</button>
+                        <input type="text" placeholder='Meus planos atuais aqui' value={plano} onChange={e => setPlano(e.target.value)}/>
+                        <input type="text" placeholder='Situação do plano aqui' value={situacao} onChange={e => setSituacao(e.target.value)}/>
+                        <input type="text" placeholder='Cor de identificação' value={cor} onChange={e => setCor(e.target.value)}/>
+                        <button onClick={adicionarPlano}>Adicionar</button>
                     </div>
+
+                    <div className='lista'>
+                        {lista.map ((item, pos) =>
+
+                            <div className='plano' key={pos}>
+                                <div className='cor' style={{ backgroundColor: item.tema }}></div>
+                                    <h1>{item.titulo}</h1>
+                                    <p>{item.tempo}</p>
+                                </div>
+
+                        )}
+                    </div>
+
                 </section>
             </section>
         </div>

@@ -1,5 +1,6 @@
 import './index.scss'
 import { useState } from 'react'
+import Cabecalho from '../../components/cabecalho'
 
 export default function VariavelEstado() {
 
@@ -53,9 +54,7 @@ export default function VariavelEstado() {
 
     return (
         <div className='pagina-variavelEstado pagina'>
-            <header className='cabeçalho'>
-                <h1>ReactJS | Variável de Estado</h1>
-            </header>
+            <h1><Cabecalho titulo='ReactJS | Variável de Estado'/></h1>
 
             <section className='geral'>
                 <section className='seçao'>

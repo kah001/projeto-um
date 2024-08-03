@@ -1,12 +1,11 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
+import Cabecalho from '../../components/cabecalho';
 
 export default function Contato() {
     return(
         <div className='pagina'>
-            <header className='cabeçalho'>
-                <h1>Contato</h1>
-            </header>
+            <h1><Cabecalho titulo='Contato'/></h1>
 
             <section className='geral'>
                 <section className='seçao'>
