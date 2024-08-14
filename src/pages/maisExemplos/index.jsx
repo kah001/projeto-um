@@ -133,6 +133,7 @@ export default function Exemplos() {
                     </div>
                     <br />
                     <hr />
+
                     <div className='rodape'>
                         <button onClick={calcular}>Calcular</button>
                         <div className='total'>O total é: {total} </div>

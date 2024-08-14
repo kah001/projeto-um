@@ -2,11 +2,13 @@
   margin: 0px;
   box-sizing: border-box;
 }
+body {
+  background-color: #f0f8ff;
+}
 
 .pagina {
 
   .geral {
-    background-color: #f0f8ff;
     padding: 20px;
 
 
@@ -17,6 +19,10 @@
       border-radius: 10px;
       box-shadow: #000 0px 0px 8px 0px;
       max-width: 800px;
+
+      .elementos {
+        display: flex;
+      }
 
       h2 {
         color: #585858;
