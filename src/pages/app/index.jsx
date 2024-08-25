@@ -26,6 +26,9 @@ export default function App() {
             </li>
             <li>
               <Link to='/exemplos'>Ir para Exemplos</Link>
+            </li>            
+            <li>
+              <Link to='/comp'>Ir para exemplos com Componentes</Link>
             </li>
           </ul>
 

@@ -201,10 +201,9 @@ export default function Exemplos() {
 
                             <div className='plano' key={pos}>
                                 <div className='cor' style={{ backgroundColor: item.tema }}></div>
-                                    <h1>{item.titulo}</h1>
-                                    <p>{item.tempo}</p>
-                                </div>
-
+                                <h1>{item.titulo}</h1>
+                                <p>{item.tempo}</p>
+                            </div>
                         )}
                     </div>
 

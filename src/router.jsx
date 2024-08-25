@@ -6,6 +6,8 @@ import VariavelEstado from './pages/variavelEstado';
 import Calculadora from './pages/calculadora';
 import Exemplos from './pages/maisExemplos';
 import Treinando from './pages/treinando';
+import Comp from './pages/comp';
+
 
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -22,6 +24,7 @@ export default function Navegação() {
                 <Route path='/calculadora' element= {<Calculadora />} />
                 <Route path='/exemplos' element= {<Exemplos />} />
                 <Route path='/treinando' element= {<Treinando />} />
+                <Route path='/comp' element= {<Comp />} />
 
                 <Route path='*' element= {<NaoEncontrado />} />
             </Routes>
