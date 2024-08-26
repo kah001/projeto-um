@@ -1,0 +1,21 @@
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    .plano {
+        background-color: #f4f4f4;
+        box-shadow: 5px 5px #000;
+        text-align: center;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+        flex-wrap: wrap;
+    
+        .cor {
+            padding: 20px;
+            width: 50px;
+            border-radius: 50px;
+            margin-left: 105px;
+        }
+    }
+}

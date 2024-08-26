@@ -1,0 +1,46 @@
+.comp-cartao {
+    width: 170px;
+    box-shadow: 0px 0px 8px 0px #000;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    position: relative;
+
+    img {
+        width: 150px;
+    }
+    h4 {
+        text-align: center;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #009900;
+        color: #fff;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .c-l {
+        background-color: #009900;
+    } 
+    .c-12 {
+        background-color: #f2ff3a;
+    }
+    .c-14 {
+        background-color: #dd9000;
+    }
+    .c-16 {
+        background-color: #d30000;
+    }
+    .c-18 {
+        background-color: #000;
+    }
+
+}
