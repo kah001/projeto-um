@@ -23,7 +23,7 @@ export default function Eventos() {
 
     return (
         <div className='pagina-eventos pagina'>
-            <h1><Cabecalho titulo='ReactJS | Eventos'/></h1>
+            <Cabecalho titulo='ReactJS | Eventos'/>
 
             <section className='geral'>
                 <section className='seçao'>

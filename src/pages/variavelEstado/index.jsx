@@ -54,7 +54,7 @@ export default function VariavelEstado() {
 
     return (
         <div className='pagina-variavelEstado pagina'>
-            <h1><Cabecalho titulo='ReactJS | Variável de Estado'/></h1>
+            <Cabecalho titulo='ReactJS | Variável de Estado'/>
 
             <section className='geral'>
                 <section className='seçao'>

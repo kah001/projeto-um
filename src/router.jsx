@@ -7,7 +7,8 @@ import Calculadora from './pages/calculadora';
 import Exemplos from './pages/maisExemplos';
 import Treinando from './pages/treinando';
 import Comp from './pages/comp';
-
+import RenderizacaoCondicional from './pages/renderizacao';
+import Efeitos from './pages/efeitos';
 
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -25,6 +26,8 @@ export default function Navegação() {
                 <Route path='/exemplos' element= {<Exemplos />} />
                 <Route path='/treinando' element= {<Treinando />} />
                 <Route path='/comp' element= {<Comp />} />
+                <Route path='/renderizacao' element={<RenderizacaoCondicional/>} />
+                <Route path='/efeitos' element={<Efeitos />} />
 
                 <Route path='*' element= {<NaoEncontrado />} />
             </Routes>

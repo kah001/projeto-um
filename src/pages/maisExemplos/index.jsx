@@ -110,7 +110,7 @@ export default function Exemplos() {
 
     return (
         <div className='pagina-exemplos pagina'>
-            <h1><Cabecalho titulo='ReactJS | Mais exemplos com Variável de Estado'/></h1>
+            <Cabecalho titulo='ReactJS | Mais exemplos com Variável de Estado'/>
 
             <section className='geral'>
                 <section className='seçao'>

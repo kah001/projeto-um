@@ -5,7 +5,7 @@ import Cabecalho from '../../components/cabecalho';
 export default function App() {
   return (
     <div className="pagina">
-      <h1><Cabecalho titulo='Estudos ReactJS'/></h1>
+      <Cabecalho titulo='Estudos ReactJS'/>
 
       <section className='geral'>
         <section className='seçao'>
@@ -29,6 +29,12 @@ export default function App() {
             </li>            
             <li>
               <Link to='/comp'>Ir para exemplos com Componentes</Link>
+            </li>
+            <li>
+              <Link to='/renderizacao'>Ir para Renderização Condicional</Link>
+            </li>
+            <li>
+              <Link to='/efeitos'>Ir para Efeitos</Link>
             </li>
           </ul>
 

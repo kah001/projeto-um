@@ -91,7 +91,7 @@ export default function Calculadora() {
         
         <div className='pagina-calculadora pagina'>
 
-            <h1><Cabecalho titulo='ReactJS | Calculadora'/></h1>
+            <Cabecalho titulo='ReactJS | Calculadora'/>
 
 
             <section className='geral'>

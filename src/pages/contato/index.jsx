@@ -5,7 +5,7 @@ import Cabecalho from '../../components/cabecalho';
 export default function Contato() {
     return(
         <div className='pagina'>
-            <h1><Cabecalho titulo='Contato'/></h1>
+            <Cabecalho titulo='Contato'/>
 
             <section className='geral'>
                 <section className='seçao'>

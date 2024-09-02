@@ -51,7 +51,7 @@ export default function Comp() {
 
     return (
         <div className='pagina-comp pagina'>
-            <h1><Cabecalho titulo='ReactJS | Exemplos com Componentes'/></h1>
+            <Cabecalho titulo='ReactJS | Exemplos com Componentes'/>
 
             <section className='geral'>
                 <section className='seçao'>
@@ -87,8 +87,8 @@ export default function Comp() {
                     </div>
 
                     <div className='lista'>
-                        {listaFilme.map (item =>
-                            <CartaoFilme item={item}/>
+                        {listaFilme.map ((item, pos) =>
+                            <CartaoFilme item = {item}/>
                         )}
                     </div>
                 </section>
